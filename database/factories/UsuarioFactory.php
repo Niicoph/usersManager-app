@@ -24,7 +24,7 @@ class UsuarioFactory extends Factory
             'dias_disponibles' => fake()->numberBetween(0, 30),
             'concurrencia' => fake()->numberBetween(1, 6),
             'fecha_vencimiento' => fake()->dateTimeBetween('now' , '+30 days'),
-            'estado' => fake()->randomElement(['activo', 'inactivo']),
+            'estado' => fake()->randomElement(['activo']),
         ];
     }
 }
